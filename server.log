@@ -1,0 +1,520 @@
+апр. 25, 2026 3:31:24 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:31:24 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:31:24 PM server.ServerApp initialize
+SEVERE: Ошибка доступа к файлу: Переменная окружения PERSON_DATA не установлена
+апр. 25, 2026 3:32:02 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:32:02 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:32:02 PM server.ServerApp initialize
+SEVERE: Ошибка доступа к файлу: Переменная окружения PERSON_DATA не установлена
+апр. 25, 2026 3:32:51 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:32:51 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:32:51 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:32:51 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:32:51 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:37:04 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:37:05 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:37:05 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:37:05 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:37:05 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:40:49 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:40:49 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:40:49 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:40:49 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:40:49 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:42:43 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:42:43 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:42:44 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:42:44 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:42:44 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:45:25 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:45:25 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:45:25 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:45:25 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:45:25 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:47:54 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:47:54 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:47:54 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:47:54 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:47:54 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:52:37 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:52:37 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:52:37 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:52:37 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:52:37 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 3:56:02 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 3:56:02 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 3:56:02 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 3:56:02 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 3:56:02 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:02:55 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:02:55 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:02:55 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 4:02:55 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:02:55 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:05:34 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:05:34 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:05:34 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 4:05:34 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:05:34 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:05:50 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:05:50 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:05:50 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 4:05:50 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:05:50 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:06:01 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:06:01 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:06:01 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 4:06:01 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:06:01 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:06:09 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:06:09 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:06:09 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 4:06:09 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:06:09 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:07:36 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:07:36 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:07:36 PM server.ServerApp loadData
+INFO: Файл не существует. Будет создана пустая коллекция.
+апр. 25, 2026 4:07:36 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:07:36 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:12:23 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:12:23 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:12:23 PM server.ServerApp loadData
+INFO: Загружено 6 элементов из файла
+апр. 25, 2026 4:12:23 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:12:23 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:13:30 PM server.ServerApp setupLogging
+INFO: Логирование настроено
+апр. 25, 2026 4:13:30 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:13:30 PM server.ServerApp loadData
+INFO: Загружено 6 элементов из файла
+апр. 25, 2026 4:13:30 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:13:30 PM server.ServerApp run
+INFO: Запуск сервера...
+апр. 25, 2026 4:20:53 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:20:53 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 25, 2026 4:20:53 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:21:03 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:21:03 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 25, 2026 4:21:04 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:21:32 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:21:32 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 25, 2026 4:21:33 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 4:23:16 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 4:23:16 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 25, 2026 4:23:16 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 5:39:47 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 5:39:47 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 25, 2026 5:39:48 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 5:42:53 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 5:42:54 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 25, 2026 5:42:54 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 5:47:56 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 5:47:56 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 25, 2026 5:47:56 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 6:24:53 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 6:24:53 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 25, 2026 6:24:54 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 25, 2026 6:28:32 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 25, 2026 6:28:32 PM server.ServerApp loadData
+INFO: Загружено 8 элементов
+апр. 25, 2026 6:28:33 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 9:06:37 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 9:06:37 AM server.ServerApp loadData
+INFO: Загружено 8 элементов
+апр. 27, 2026 9:06:38 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 9:08:10 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 9:08:10 AM server.ServerApp loadData
+INFO: Загружено 8 элементов
+апр. 27, 2026 9:08:10 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 9:55:14 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 9:55:14 AM server.ServerApp loadData
+INFO: Загружено 8 элементов
+апр. 27, 2026 9:55:15 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 10:21:54 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 10:21:54 AM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 27, 2026 10:21:54 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 10:29:03 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 10:29:03 AM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 27, 2026 10:29:03 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:11:10 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:11:10 AM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 27, 2026 11:11:11 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:16:14 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:16:14 AM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 27, 2026 11:16:14 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:24:29 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:24:30 AM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 11:24:30 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:32:08 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:32:08 AM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 11:32:08 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:33:04 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:33:04 AM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 11:33:04 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:39:27 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:39:28 AM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 11:39:28 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 11:47:57 AM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 11:47:57 AM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 11:47:57 AM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:01:16 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:01:16 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 12:01:16 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:11:28 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:11:28 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 12:11:29 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:14:45 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:14:45 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 12:14:45 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:20:01 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:20:01 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 12:20:02 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:22:33 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:22:33 PM server.ServerApp loadData
+INFO: Загружено 7 элементов
+апр. 27, 2026 12:22:33 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:38:12 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:38:12 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 12:38:12 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:40:35 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:40:36 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 12:40:36 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:45:11 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:45:11 PM server.ServerApp loadData
+INFO: Загружено 5 элементов
+апр. 27, 2026 12:45:11 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 12:46:41 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 12:46:41 PM server.ServerApp loadData
+INFO: Загружено 5 элементов
+апр. 27, 2026 12:46:42 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 2:37:21 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 2:37:21 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 2:37:21 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 2:39:17 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 2:39:17 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 2:39:17 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 2:43:51 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 2:43:51 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 2:43:52 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 27, 2026 2:45:29 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 27, 2026 2:45:29 PM server.ServerApp loadData
+INFO: Загружено 6 элементов
+апр. 27, 2026 2:45:30 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:26:47 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:26:47 PM server.ServerApp loadData
+INFO: Загружено 3 элементов
+апр. 29, 2026 12:26:48 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:32:40 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:32:41 PM server.ServerApp loadData
+INFO: Загружено 3 элементов
+апр. 29, 2026 12:32:41 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:34:08 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:34:08 PM server.ServerApp loadData
+INFO: Загружено 9 элементов
+апр. 29, 2026 12:34:08 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:34:48 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:34:48 PM server.ServerApp loadData
+INFO: Загружено 9 элементов
+апр. 29, 2026 12:34:48 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:35:41 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:35:41 PM server.ServerApp loadData
+INFO: Загружено 10 элементов
+апр. 29, 2026 12:35:42 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:37:44 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:37:44 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 12:37:44 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 12:38:16 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 12:38:16 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 12:38:16 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:20:00 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:20:00 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:20:00 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:27:05 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:27:05 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:27:05 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:37:02 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:37:02 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:37:02 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:40:26 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:40:26 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:40:26 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:41:11 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:41:11 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:41:11 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:49:05 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:49:05 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:49:05 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:49:45 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:49:45 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:49:45 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:51:13 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:51:13 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:51:14 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:51:33 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:51:34 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:51:34 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 1:55:04 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 1:55:04 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 1:55:05 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 2:05:43 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 2:05:43 PM server.ServerApp loadData
+INFO: Загружено 2 элементов
+апр. 29, 2026 2:05:44 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 2:16:47 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 2:16:47 PM server.ServerApp loadData
+INFO: Загружено 73 элементов
+апр. 29, 2026 2:16:47 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 2:23:49 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 2:23:50 PM server.ServerApp loadData
+INFO: Загружено 103 элементов
+апр. 29, 2026 2:23:50 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 2:51:01 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 2:51:01 PM server.ServerApp loadData
+INFO: Загружено 103 элементов
+апр. 29, 2026 2:51:01 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 2:54:30 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 2:54:31 PM server.ServerApp loadData
+INFO: Загружено 103 элементов
+апр. 29, 2026 2:54:31 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 3:01:22 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 3:01:22 PM server.ServerApp loadData
+INFO: Загружено 103 элементов
+апр. 29, 2026 3:01:23 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован
+апр. 29, 2026 3:13:01 PM server.ServerApp initialize
+INFO: Инициализация сервера...
+апр. 29, 2026 3:13:02 PM server.ServerApp loadData
+INFO: Загружено 103 элементов
+апр. 29, 2026 3:13:02 PM server.ServerApp initialize
+INFO: Сервер успешно инициализирован

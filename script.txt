@@ -1,0 +1,12 @@
+add
+Bob
+10
+20
+170.5
+1990-05-15
+BLUE
+JAPAN
+null
+show
+info
+save
