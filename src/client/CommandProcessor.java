@@ -9,8 +9,13 @@ import java.io.IOException;
 import java.util.Set;
 
 public class CommandProcessor {
+
     public static final Set<String> COMMANDS_WITH_ELEMENT = Set.of(
             "add", "update", "add_if_min", "remove_greater", "remove_lower"
+    );
+
+    private static final Set<String> COMMANDS_NO_ARGS = Set.of(
+            "help", "info", "show", "clear", "print_unique_nationality", "print_field_descending_birthday"
     );
 
     private final Client client;
@@ -24,6 +29,17 @@ public class CommandProcessor {
     }
 
     public void process(String commandName, String[] args) throws IOException, ClassNotFoundException {
+
+        if (COMMANDS_NO_ARGS.contains(commandName)) {
+            if (args.length > 0) {
+                System.out.println("Ошибка: команда " + commandName + " не принимает аргументы");
+                return;
+            }
+            Response response = client.sendRequest(commandName, new String[0], null);
+            responseHandler.handle(response);
+            return;
+        }
+
         switch (commandName) {
             case "help" -> processHelp();
             case "remove_by_id" -> processRemoveById(args);
@@ -86,9 +102,15 @@ public class CommandProcessor {
 
     private void processDefault(String commandName, String[] args) throws IOException, ClassNotFoundException {
         Person person = null;
+
         if (COMMANDS_WITH_ELEMENT.contains(commandName)) {
+            if (args.length > 0) {
+                System.out.println("Ошибка: команда " + commandName + " не принимает аргументы");
+                return;
+            }
             person = inputReader.readPerson();
         }
+
         Response response = client.sendRequest(commandName, args, person);
         responseHandler.handle(response);
     }

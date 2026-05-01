@@ -29,20 +29,29 @@ public class Server {
 
     public Server(RequestHandler requestHandler) throws IOException {
         this.requestHandler = requestHandler;
-        this.channel = DatagramChannel.open();
-        this.channel.configureBlocking(false);
-        this.channel.socket().bind(new InetSocketAddress(PORT));
-        this.channel.socket().setReceiveBufferSize(1024 * 1024);
-        this.channel.socket().setSendBufferSize(1024 * 1024);
-
-        this.selector = Selector.open();
-        this.channel.register(selector, SelectionKey.OP_READ);
-
         this.consoleScanner = new Scanner(System.in);
         this.running = true;
 
+        this.channel = initializeChannel();
+        this.selector = initializeSelector();
+
         logger.info("Сервер запущен на порту " + PORT);
         System.out.println("Сервер запущен");
+    }
+
+    private DatagramChannel initializeChannel() throws IOException {
+        DatagramChannel ch = DatagramChannel.open();
+        ch.configureBlocking(false);
+        ch.socket().bind(new InetSocketAddress(PORT));
+        ch.socket().setReceiveBufferSize(1024 * 1024);
+        ch.socket().setSendBufferSize(1024 * 1024);
+        return ch;
+    }
+
+    private Selector initializeSelector() throws IOException {
+        Selector sel = Selector.open();
+        channel.register(sel, SelectionKey.OP_READ);
+        return sel;
     }
 
     public void start() {
@@ -50,37 +59,10 @@ public class Server {
 
         while (running) {
             try {
-                if (System.in.available() > 0) {
-                    String input = consoleScanner.nextLine().trim().toLowerCase();
-                    if (input.equals("save")) {
-                        saveCollection();
-                    } else if (!input.isEmpty()) {
-                        System.out.println("Неизвестная команда. Доступные: save");
-                    }
-                }
-
-                if (selector.isOpen()) {
-                    selector.select(100);
-                } else {
-                    break;
-                }
-
-                for (SelectionKey key : selector.selectedKeys()) {
-                    if (key.isReadable()) {
-                        buffer.clear();
-                        SocketAddress clientAddress = channel.receive(buffer);
-
-                        if (clientAddress != null) {
-                            buffer.flip();
-                            byte[] receivedData = new byte[buffer.remaining()];
-                            buffer.get(receivedData);
-                            processRequest(receivedData, clientAddress);
-                        }
-                    }
-                }
-
-                selector.selectedKeys().clear();
-
+                handleConsoleInput();
+                waitForActivities();
+                processSelectedKeys(buffer);
+                clearSelectedKeys();
             } catch (IOException e) {
                 if (running) {
                     logger.severe("Ошибка: " + e.getMessage());
@@ -89,6 +71,55 @@ public class Server {
         }
 
         logger.info("Основной цикл сервера завершён");
+    }
+
+    private void handleConsoleInput() {
+        try {
+            if (System.in.available() > 0) {
+                String input = consoleScanner.nextLine().trim().toLowerCase();
+                processConsoleCommand(input);
+            }
+        } catch (IOException e) {
+            logger.warning("Ошибка чтения консоли: " + e.getMessage());
+        }
+    }
+
+    private void processConsoleCommand(String command) {
+        if (command.equals("save")) {
+            saveCollection();
+        } else if (!command.isEmpty()) {
+            System.out.println("Неизвестная команда. Доступные: save");
+        }
+    }
+
+    private void waitForActivities() throws IOException {
+        if (selector.isOpen()) {
+            selector.select(100);
+        }
+    }
+
+    private void processSelectedKeys(ByteBuffer buffer) throws IOException {
+        for (SelectionKey key : selector.selectedKeys()) {
+            if (key.isReadable() && key.channel() == channel) {
+                handleClientRequest(buffer);
+            }
+        }
+    }
+
+    private void handleClientRequest(ByteBuffer buffer) throws IOException {
+        buffer.clear();
+        SocketAddress clientAddress = channel.receive(buffer);
+
+        if (clientAddress != null) {
+            buffer.flip();
+            byte[] receivedData = new byte[buffer.remaining()];
+            buffer.get(receivedData);
+            processRequest(receivedData, clientAddress);
+        }
+    }
+
+    private void clearSelectedKeys() {
+        selector.selectedKeys().clear();
     }
 
     private void saveCollection() {
@@ -105,18 +136,7 @@ public class Server {
     }
 
     private void processRequest(byte[] data, SocketAddress clientAddress) throws IOException {
-        try (ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(data);
-             ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream) {
-                 @Override
-                 protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {
-                     try {
-                         return Class.forName(desc.getName(), false, Thread.currentThread().getContextClassLoader());
-                     } catch (ClassNotFoundException e) {
-                         return super.resolveClass(desc);
-                     }
-                 }
-             }) {
-
+        try (ObjectInputStream objectInputStream = createObjectInputStream(data)) {
             Request request = (Request) objectInputStream.readObject();
             logger.info("Обработка команды: " + request.getCommandName() + " от " + clientAddress);
 
@@ -140,18 +160,39 @@ public class Server {
         }
     }
 
+    private ObjectInputStream createObjectInputStream(byte[] data) throws IOException {
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(data);
+        return new ObjectInputStream(byteArrayInputStream) {
+            @Override
+            protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {
+                try {
+                    return Class.forName(desc.getName(), false, Thread.currentThread().getContextClassLoader());
+                } catch (ClassNotFoundException e) {
+                    return super.resolveClass(desc);
+                }
+            }
+        };
+    }
+
     private void sendResponse(Response response, SocketAddress clientAddress) throws IOException {
         List<byte[]> packets = PacketSplitter.split(response);
 
+        sendAllPackets(packets, clientAddress);
+        sendEndMarker(clientAddress);
+
+        logger.info("Ответ отправлен клиенту " + clientAddress + " (" + packets.size() + " пакетов)");
+    }
+
+    private void sendAllPackets(List<byte[]> packets, SocketAddress clientAddress) throws IOException {
         for (byte[] packetData : packets) {
             ByteBuffer buffer = ByteBuffer.wrap(packetData);
             channel.send(buffer, clientAddress);
         }
+    }
 
+    private void sendEndMarker(SocketAddress clientAddress) throws IOException {
         ByteBuffer endMarker = ByteBuffer.wrap(new byte[]{0});
         channel.send(endMarker, clientAddress);
-
-        logger.info("Ответ отправлен клиенту " + clientAddress + " (" + packets.size() + " пакетов)");
     }
 
     public void stop() {

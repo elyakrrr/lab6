@@ -12,7 +12,10 @@ public class AddCommand extends BaseCommand implements CommandInvoker.ElementCom
 
     @Override
     public void execute(String[] args) {
-        System.out.println("Ошибка: команда add должна использоваться с элементом");
+        String msg = "Ошибка: команда add должна использоваться с элементом";
+        if (resultCapture != null) {
+            resultCapture.append(msg);
+        }
     }
 
     @Override
@@ -24,18 +27,15 @@ public class AddCommand extends BaseCommand implements CommandInvoker.ElementCom
         if (person == null) {
             String msg = "Ошибка: не передан объект Person";
             if (resultCapture != null) resultCapture.append(msg);
-            else System.out.println(msg);
             return;
         }
 
         if (collectionManager.add(person)) {
             String msg = "Элемент успешно добавлен. ID: " + person.getId();
             if (resultCapture != null) resultCapture.append(msg);
-            else System.out.println(msg);
         } else {
             String msg = "Ошибка при добавлении элемента";
             if (resultCapture != null) resultCapture.append(msg);
-            else System.out.println(msg);
         }
     }
 
